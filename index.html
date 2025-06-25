@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Addition Window Cards</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="print-header">
+    <div>Name: ______________________________</div>
+    <div>Grade: ______________________________</div>
+    <div>Date: _______________</div>
+  </div>
+
+  <h1 id="mainTitle">Addition Window Cards</h1>
+
+  <div class="controls">
+    <label>
+      Grid: Rows × Columns
+      <div style="display: flex; gap: 0.5rem;">
+        <input type="number" id="numRows" value="10" min="1" max="100" style="width: 5rem;" />
+        ×
+        <input type="number" id="numCols" value="10" min="1" max="100" style="width: 5rem;" />
+      </div>
+    </label>
+    <label>
+      Digits (1–6)
+      <input type="number" id="numDigits" value="4" min="1" max="6" />
+    </label>
+    <label>
+      Font Size (pt)
+      <input type="number" id="fontSize" value="10" min="8" max="36" />
+    </label>
+    <label>
+      <span>&nbsp;</span>
+      <button onclick="generate()">Generate</button>
+    </label>
+    <label>
+      <span>&nbsp;</span>
+      <button onclick="toggleAnswers()">Toggle Answers</button>
+    </label>
+    <label>
+      <span>&nbsp;</span>
+      <button onclick="window.print()">Print</button>
+    </label>
+  </div>
+
+  <p class="print-note">Tip: Click "Toggle Answers" to hide answers before printing.</p>
+
+  <div class="cards" id="cardContainer"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
