@@ -1,83 +1,67 @@
-## ✅ `README.md`
+# 🧮 Math Window Cards Generator
 
-```markdown
-# 4-Digit Addition Window Cards Generator
+A printable, customizable worksheet generator designed to help Grade 3–6 students practice core math operations like addition, subtraction, multiplication, and division — especially useful in classrooms with limited access to devices.
 
-This is a lightweight, printer-friendly web app for generating randomized **addition window card worksheets** for Grade 5 students and similar learners. It helps reinforce vertical addition skills — especially multi-digit arithmetic with carry-over.
-
-Teachers can easily generate, print, and reuse cleanly formatted problem sets — with or without answers — in a flexible grid layout.
+> Originally created for San Vicente Elementary School (QC, PH) teachers and learners.
 
 ---
 
 ## ✨ Features
 
-- 🔢 **Adjustable Number of Digits**: 1 to 6-digit addends, comma-formatted
-- 🧮 **Configurable Grid Layout**: Rows × Columns (e.g. 10×10 = 100 problems)
-- 🔍 **Show/Hide Answers**: Toggle visibility for checking or use as window cards
-- 🖨️ **Printer-Optimized Layout**: Auto-fits content to A4 page, minimal borders, repeatable layout
-- 💾 **Persistent Settings**: Remembers your last used settings via `localStorage`
-- 🧠 **Header for Handwritten Use**: Includes print-only name/date/grade header
-- 🔠 **Font Size Control**: Allows compact printing for large grids (8pt fits 10×10 per page)
+- 📄 **Printer-friendly A4 layout**  
+  Compact card grid fits up to **10×10 problems per page** with answer toggle.
+
+- 🔄 **Dynamic operator support**  
+  Choose from **Addition, Subtraction, Multiplication, or Division**.
+
+- 🧠 **Math difficulty constraints**  
+  - ✅ Avoid **carrying** in addition
+  - ✅ Avoid **borrowing** in subtraction  
+  *(Only active when relevant to selected operation)*
+
+- 🧩 **Flexible grid layout**  
+  Customize **rows × columns**, digit range (1–6), and font size (8pt+).
+
+- 👁️ **Toggle answers**  
+  Show/hide correct answers in-place — ideal for printing a worksheet + answer key combo.
+
+- 💾 **Local storage support**  
+  Automatically remembers your last-used settings.
 
 ---
 
-## 📄 Usage
+## 💡 Planned Improvements
 
-1. Open the app in your browser (or GitHub Pages).
-2. Choose:
-   - Number of **Rows** and **Columns** (e.g., 10 rows × 10 columns)
-   - Number of **Digits** (1 to 6)
-   - Desired **Font Size**
-3. Click **"Generate"** to produce a randomized worksheet.
-4. Click **"Toggle Answers"** to show/hide solutions.
-5. Click **"Print"** to send to your printer or export to PDF.
-6. Use scissors to cut a "window" over the answer if desired!
+- Smarter operand generation (e.g., avoid trivial division like `55 ÷ 55`)
+- Operator-aware answer coloring (already partially styled in CSS)
+- Alternate layout mode: one-page problems + one-page answer key
 
 ---
 
-## 📐 Print Layout Notes
+## 🖨️ Printing Tips
 
-- Best results on **A4 paper**
-- **10pt font** allows fitting **100 problems (10×10)** neatly per page
-- Cards are spaced evenly, with fixed height and width to ensure clean alignment
-- Answers are hidden by default — enabling manual reveal or overlay use
-
----
-
-## 🚀 Deployment
-
-You can publish this app easily via **GitHub Pages**:
-
-1. Push the project to a GitHub repository.
-2. Go to **Settings > Pages**, and select the root folder (e.g., `main` branch, `/ (root)`).
-3. GitHub will provide a URL like `https://yourusername.github.io/your-repo-name`.
+- Use **A4 paper**, portrait mode  
+- Click **"Toggle Answers"** to hide answers before printing
+- Click again to reveal answers and reprint an overlay answer sheet
 
 ---
 
-## 📁 Files
+## 👨‍🏫 Acknowledgements
 
-- `index.html` — Main HTML UI
-- `styles.css` — App styling, including print layout
-- `script.js` — Core logic: generation, toggling, layout control
-- `README.md` — This file
+Huge thanks to the teachers and students of **San Vicente Elementary School** for testing and providing feedback.
 
----
-
-## 🧪 Upcoming Features (Planned)
-
-- ✂️ Print-aligned **window card reveal pages**
-- 📄 Page 2 **answer key**
-- ➗ Support for **subtraction** and **mixed operations**
-- 🧑‍🏫 Teacher-specific presets
+Inspired in part by discussions in ["Why People Hate Math" by *Answer in Progress*](https://www.youtube.com/watch?v=xvOkXXprG2g).
 
 ---
 
-## 📝 License
+## 📁 Project Files
 
-MIT — free to use, modify, and distribute for educational purposes.
+- `index.html` – Main app UI
+- `styles.css` – Print-optimized, responsive layout
+- `script.js` – Grid generator, settings, and constraints logic
 
 ---
 
-## 🙏 Acknowledgments
+## ✅ Live Demo
 
-Developed to support **public school math teachers** and learners with accessible, printable math drill materials — without needing paid worksheets or apps.
+Coming soon via GitHub Pages...

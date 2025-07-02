@@ -53,8 +53,6 @@ addition-cards/
 
 ### ✅ Summary
 
-You now have:
-
 * A clean **modular app** with saved preferences
 * **Dynamic title and font scaling** for digital and print use
 * **Print headers** to simulate store-bought work cards
@@ -80,3 +78,23 @@ You now have:
   =======
 = 127,353
 ```
+
+
+### 📌 Summary of Today’s Work ( 2025-07-02 Wed Jul 2 )
+
+**1) Done**
+
+* Integrated all four operations (+ − × ÷) with dynamic title updates and operator-specific logic
+* Added constraint toggles for "Avoid Carrying" (Addition) and "Avoid Borrowing" (Subtraction)
+* Reorganized control layout into two clean rows: inputs on top, action buttons below
+* Visual ⚠ markers show when constraints are violated
+* Styles and layout tweaked to preserve A4 compatibility and perfect overlay alignment
+
+**2) In Progress**
+
+* Fine-tuning constraint checkbox visibility to minimize UI layout shift
+* Improving division problem generator to avoid trivial or redundant equations
+
+**3) Blockers**
+
+* None currently, but upcoming: constraint tuning for more realistic math problems (e.g., avoid “99 ÷ 1” and “same ÷ same” patterns)
